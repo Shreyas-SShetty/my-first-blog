@@ -1,5 +1,9 @@
 # my-first-blog
 
-This blog uses Django for its backend and HTML,Bootstrap and CSS for its frontend.    
-Features-Can add more posts to the blog.  
+Backend - Django 
+
+Frontend - HTML,CSS,Bootstrap
+
+Features-Can add more posts to the blog and also edit them(only by admin). 
+
 Hosted online on- http://shreyasthat2.pythonanywhere.com/
