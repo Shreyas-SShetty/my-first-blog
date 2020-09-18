@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.db.models import CharField
 from django.utils import timezone
 
 
@@ -9,6 +10,8 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    likes = models.IntegerField(default=0)
+    dislikes = models.IntegerField(default=0)
 
     def publish(self):
         self.published_date = timezone.now()
